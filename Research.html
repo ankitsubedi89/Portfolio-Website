@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Author" content="Ankit Subedi">
+    <meta name="Description" content="Research page of the portfolio website">
+    <title>Portfolio-Research</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Baloo 2', cursive;
+    }
+</style>
+
+<body>
+    <nav id="navigation">
+        <div class="container">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Research.html" class="active">Research</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div>
+                <a href="Index.html"><img src="Image/logo.jpg" alt="logo of website" class="logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="Research">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h2 style="text-decoration: underline; background-color: rgba(128, 128, 128, 0.295);
+                    };">Research</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td><img src="image/nav1.png" id="nvft"><br>
+                        <p>Navigation bar of Reference website</p><a
+                            href="https://preview.colorlib.com/#personalportfolio" target="_blank">Link</a>
+                    </td>
+                    <td><img src="image/nav2.PNG" id="nvft"><br>
+                        <p>Navigation bar of Portfolio website</p>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td><img src="image/footer1.png" id="nvft"><br>
+                        <p>Footer of Reference website</p><a href="https://perfectplan.com.np/" target="_blank">Link</a>
+                    </td>
+                    <td><img src="image/footer2.PNG" id="nvft"><br>
+                        <p>Footer of Portfolio website</p>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td><img src="image/cv1.png"><br>
+                        <p>CV page of Reference website</p><a href="https://preview.colorlib.com/#civic"
+                            target="_blank">Link</a>
+                    </td>
+                    <td><img src="image/cv2.png"><br>
+                        <p>CV page of Portfolio website</p>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td><img src="image/contact1.PNG" id="cobl"><br>
+                        <p>Contact form of Reference website</p><a
+                            href="https://preview.colorlib.com/theme/bootstrap/contact-form-06/"
+                            target="_blank">Link</a>
+                    </td>
+                    <td><img src="image/contact2.png" id="cobl"><br>
+                        <p>Contact form of Portfolil website</p>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td><img src="image/Blog2.PNG" id="cobl"><br>
+                        <p>Blog page of Reference website</p><a href="https://www.bsr.org/en/our-insights/blog"
+                            target="_blank">Link</a>
+                    </td>
+                    <td><img src="image/blog1.png" id="cobl"><br>
+                        <p>Blog page of Portfolio website</p>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+    <footer>
+        <div id="Details">
+            <div class="Container">
+                <div class="main-box">
+                    <div class="sub-box">
+                        <p>About Me</p>
+                        <div id="my-info">
+                            <span>Hello, I am Ankit Subedi.I am currently studing Bachelors of Science in Computing at
+                                Informatics Collage, Pokhara. I was always intrested in technology. And like to continue
+                                working in this field.</span>
+                        </div>
+
+                    </div>
+                    <div class="sub-box">
+                        <p>Quick Links</p>
+                        <ul>
+                            <li><a href="Index.html">Home</a></li>
+                            <li><a href="CV.html">CV</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="Research.html">Research</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub-box">
+                        <p>Get in Touch</p>
+                        <span>Pokhara, Nepal</span>
+                        <span>9844919064</span>
+                        <span>ankitsubedi89@gmail.com</span>
+                        </p>
+                        <div id="icon">
+                            <ul>
+                                <li><a href="https://twitter.com/AnkitSubedi19" target="_blank"><i
+                                            class="bi bi-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/ankit_subedi_89/" target="_blank"><i
+                                            class="bi bi-instagram"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com/ankit.subedi.7906/" target="_blank"><i
+                                            class="bi bi-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div id="footer2">
+            <div class="footer-content">
+                <p> &copy; Copyright | 2021 Ankit Subedi </p>
+                <p>Website By: Ankit Subedi</p>
+            </div>
+        </div>
+    </footer>
+    <button id="topBtn" onclick="goTop()">Top</button>
+    <script>
+        var topBtn = document.getElementById("topBtn");  //Creating the variable topBtn and grabbing the element by id topBtn
+
+        window.onscroll = function () { scroll() };  // Calling the function scroll while scroll
+
+        function scroll() {   // Creating the function scroll
+            if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {  //if we scroll 75 pixel button (Top) should be displayed
+                topBtn.style.display = "block";
+            }
+            else {
+                topBtn.style.display = "none";  // if we scroll less than 75 pixel from top button (Top) shouldnot be displayed
+            }
+        }
+
+        function goTop() {        // calling function goTop
+            document.body.scrollTop = 0;            // move the page to 0 pixel when top button is clicked
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

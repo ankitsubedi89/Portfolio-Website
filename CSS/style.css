@@ -1,0 +1,412 @@
+/* Global CSS starts from here.  */
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo{
+    float: left;
+    margin-top: 18px;
+}
+
+#navigation{
+    height: 95px;
+    background-color: aliceblue;
+}
+
+#navigation ul li{
+    display: inline-block;
+    padding: 8px;
+    margin: 16px;
+}
+
+#navigation ul{
+    list-style:  none;
+    margin-top: 10px;
+   position: absolute;
+   margin-left: 60%;
+}
+
+#navigation ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 100%;
+}
+#navigation li a:hover, #navigation li a.active{
+    text-decoration: underline;
+    color: #ea3a60;
+}
+
+#Details{
+    background-color: #212121;
+    height: 300px;
+    position: relative;
+}
+
+.sub-box{
+    width: 150px;
+    margin: 35px auto;
+    font-size: 17px;
+}
+
+.sub-box ul a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.sub-box ul{
+    list-style: none;
+}
+
+.sub-box p{
+    font-size: 20px;
+    color: #ea3a60;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.main-box{
+    display: flex;
+
+}
+
+
+.sub-box #my-info span{
+    text-align: justify;
+    color: rgb(97, 97, 97);
+    display: inline-block;
+    width: 333px;
+    height: 135px;
+}
+
+.sub-box span{
+    color: white;
+}
+
+.sub-box span a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub-box #icon ul a{
+    list-style: none;
+    border-radius: 50%;
+    font-size: 16px
+    
+}
+
+#icon ul{
+    position: absolute;
+    left: 177px;
+    margin-top: 51px;
+
+}
+
+.sub-box #icon li{
+    display: inline;
+    padding-right: 2px;
+
+}
+
+.sub-box ul a:hover{
+    color: #ea3a60;
+}
+
+#footer2{
+    height: 60px;
+    background-color: #424242;
+}
+
+.footer-content{
+    color: #e5e7e8;
+    width: 240px;
+    margin: auto;
+    font-size: 18px;
+}
+/* Global CSS ends here. */
+
+
+/* CSS for home page starts from here.  */
+#Banner{
+    background-image: url("../Image/andrew-neel-cckf4TsHAuw-unsplash.jpg");
+    height: 700px;
+    background-size: 100% 100%;
+}
+
+.Greeting{
+    color: rgba(255, 255, 255, 0.959);
+    font-size: 50px;
+}
+
+.Greeting h1{
+    margin-top: 93px;
+    margin-left: 25%;
+}
+
+.Greeting h3{
+    margin-left: 34%;
+}
+
+.Greeting p{
+    margin-left: 34%;
+}
+
+/* CSS for home page ends here.  */
+
+
+
+/* CSS for CV page starts from here  */
+
+.cv{
+    height: 580px;
+    width: 100%;
+    background-color: #f2f7f8;
+}
+
+.cv-detail{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+ #info{
+    margin-top: 50px;
+    width: 400px;
+}
+
+#info h1{
+    font-size: 52px;
+}
+
+#info p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+#image{
+    margin-top: 95px;
+}
+
+.cv-detail img{
+    height: 360px;
+}
+
+.about-me{
+    margin-top: 100px;
+    margin-left: 270px;
+    height: 1050px;
+}
+
+.working-experience{
+    width: 600px;
+}
+
+.working-experience h1{
+    font-size: 52px;
+    text-decoration: underline;
+}
+
+.working-experience p{
+    margin: 80px;
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+.education{
+    width: 600px;
+}
+
+.education h1{
+    font-size: 52px;
+    text-decoration: underline;
+}
+
+.higher h3{
+    font-size: 35px;
+    margin: 80px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.education p{
+    font-size: 20px;
+    margin-left: 80px;
+    text-align: justify;
+}
+
+.bachelor h3{
+    font-size: 35px;
+    margin: 80px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* CSS for cv page ends here */
+
+
+/* CSS for Blog page starts from here */
+
+.blog{
+    height: 1585px;
+    background-color: rgba(128, 128, 128, 0.295);
+}
+
+.technology1 h1{
+    width: 577px;
+    margin: auto;
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.container p {
+    text-align: justify;
+}
+
+#hide-text{
+    display: none;
+}
+
+#btn-read {
+    background-color: #ea3a60;
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+
+/* CSS for Blog page ends here  */
+
+
+/* CSS for Research page starts from here  */
+
+.Research  table{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.Research img{
+    margin-top: 40px;
+    width: 300px;
+    height: 380px;
+}
+
+#nvft{
+    width: 700px;
+    height: 300px;
+}
+
+#cobl{
+    width: 350px;
+    height: 380px;
+}
+
+#topBtn{
+    display: none;
+    padding: 15px;
+    background-color: #ea3a60;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 35px;
+    right: 25px;    
+    cursor: pointer;
+}
+
+/* CSS for Research page ends here  */
+
+
+/* CSS for Contact page starts from here.  */
+
+.head{
+    background-color: rgba(128, 128, 128, 0.295);
+    height: 150px;
+    background-size: 100% 100%;
+}
+
+.container h2{
+    width: 296px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.contact-me{
+    height: 600px;
+    background-color: rgba(128, 128, 128, 0.295);
+}
+
+.contact-detail{
+    border: 2px solid black;
+    width: 600px;
+    height: 520px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.form-group{
+    margin-left: 90px;
+}
+
+.form-group label{
+    margin-top: 20px;
+    display: inline;
+}
+
+.form-group input{
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group input{
+    width: 412px;
+    padding: 8px;
+}
+
+.form-group textarea{
+    display: block;
+    width: 412px;
+    padding: 8px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+.contact-detail form p{
+    text-decoration: underline;
+    width: 158px;
+    margin: 10px auto;
+}
+
+.form-group button a{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.send{
+    background-color: #ea3a60;
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 141px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+ background-color: black;
+}
+
+/* CSS for contact page ends here  */

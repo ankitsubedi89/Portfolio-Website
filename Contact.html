@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Author" content="Ankit Subedi">
+    <meta name="Description" content="Contact page of the portfolio website">
+    <title>Portfolio-Contact</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Baloo 2', cursive;
+    }
+</style>
+
+<body>
+    <nav id="navigation">
+        <div class="container">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Cv.html">CV</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+            <div>
+                <a href="Index.html"><img src="Image/logo.jpg" alt="logo of website" class="logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="head">
+        <div class="container">
+            <h2>Contact Form</h2>
+        </div>
+    </section>
+
+    <section class="contact-me">
+        <div class="container">
+            <div class="contact-detail">
+                <form onsubmit="return validForm()" action="Index.html">
+                    <p>SEND ME A MESSAGE</p>
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input type="text" placeholder="Name" id="nam">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number:</label>
+                        <input type="number" nam placeholder="Phone Number" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" placeholder="Email" id="eml">
+                    </div>
+                    <div class="form-group">
+                        <label>Subject:</label>
+                        <input type="text" placeholder="Suject" id="subject">
+                    </div>
+                    <div class="form-group">
+                        <label>Message:</label>
+                        <textarea placeholder="Message" id="text"></textarea>
+                    </div>
+                    <input type="submit" value="Send Now" class="send" />
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="Details">
+            <div class="Container">
+                <div class="main-box">
+                    <div class="sub-box">
+                        <p>About Me</p>
+                        <div id="my-info">
+                            <span>Hello, I am Ankit Subedi.I am currently studing Bachelors of Science in Computing at
+                                Informatics Collage, Pokhara. I was always intrested in technology. And like to continue
+                                working in this field.</span>
+                        </div>
+
+                    </div>
+                    <div class="sub-box">
+                        <p>Quick Links</p>
+                        <ul>
+                            <li><a href="Index.html">Home</a></li>
+                            <li><a href="CV.html">CV</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li><a href="Research.html">Research</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="sub-box">
+                        <p>Get in Touch</p>
+                        <span>Pokhara, Nepal</span>
+                        <span>9844919064</span>
+                        <span>ankitsubedi89@gmail.com</span>
+                        </p>
+                        <div id="icon">
+                            <ul>
+                                <li><a href="https://twitter.com/AnkitSubedi19" target="_blank"><i
+                                            class="bi bi-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/ankit_subedi_89/" target="_blank"><i
+                                            class="bi bi-instagram"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com/ankit.subedi.7906/" target="_blank"><i
+                                            class="bi bi-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div id="footer2">
+            <div class="footer-content">
+                <p> &copy; Copyright | 2021 Ankit Subedi </p>
+                <p>Website By: Ankit Subedi</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        function validForm() {   //Creating function validForm
+            var nam = document.getElementById("nam").value;  // Creating variable nam and grabbing the element with id nam
+            var eml = document.getElementById("eml").value;  // Creating variable eml and grabbing the element with id eml
+            var phone = document.getElementById("phone").value; // Creating variable eml  and grabbing the element with id phone
+            var subject = document.getElementById("subject").value;  //Creating variable subject and grabbing the element with id subject
+            var text = document.getElementById("text").value; //Creating variable text and garbbing the element with id text
+
+            //if nam, eml, phone, subject and text are empty string error message shown and remain in contact page
+            if (nam == "" || eml == "" || phone == "" || subject == "" || text == "") {
+                alert("All field need to be filled.");
+                return false;
+            }
+
+            //if nam, eml, phone, subject and text are not empty string thanks message shown and return to index page
+            else {
+                alert("Thanks for messaging.");
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>
